@@ -1,0 +1,33 @@
+<div id="nav_bg">
+	<div id="nav">
+		<%= link_to image_tag("logo.png", :alt => "CheerList Logo", :id => "logo",:height => 40,:width=> 200), "#" %>
+		<div id="nav_links">
+			<ul>
+				<li>
+					<%= link_to "Home", root_path %>
+				</li>
+				<li>
+					<%= link_to "Games" %>
+				</li>
+        		<li>
+					<%= link_to "Teams" %>
+				</li>
+				<li>
+					<%= link_to "Leaderboard" %>
+				</li>
+				<% if signed_in? %>
+				
+					<li>
+					Signed in as <%=current_user.email%>
+					</li>
+					<li>
+					 <%= link_to "Sign out",signout_path, method: 'delete'%>
+					</li>
+				<%else%>
+					<%= link_to "Sign In", signin_path%>
+				<%end%>
+			</ul>
+		</div>
+		
+	</div>
+</div>

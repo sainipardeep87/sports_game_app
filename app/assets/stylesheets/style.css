@@ -1,0 +1,331 @@
+h1 {
+  font-size: 24px;
+}
+a {
+	text-decoration: none;
+	color: #3987CB;
+}
+a:visited {
+	color: #3987CB;
+}
+a:hover {
+	background: none;
+}
+body {
+	font-family: "proxima-nova-1","proxima-nova-2",helvetica,arial,sans-serif;
+	background-color: white;
+}
+.gmaps4rails_map {
+  display: table-cell;
+  vertical-align: middle;
+}
+.loading_icon {
+	display: block;
+  vertical-align: middle;
+  margin: 0px auto
+}
+div.notice {
+	margin-top: 3px;
+	margin-bottom: 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+div.alert {
+	margin-top: 3px;
+	margin-bottom: 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.content_pane {
+	background-color: #FFFFFF;
+	padding: 25px;
+	margin: 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+  overflow: auto;
+}
+.content_pane_title {
+	margin-top: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#nav_bg {
+	background-image: url('nav_bg.png');
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 38px;
+}
+#nav {
+	width: 960px;
+	margin: 0px auto;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+#nav a:hover {
+	text-decoration: underline;
+}
+#nav li a{
+    display: block;
+    padding: 7px 10px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+#user_nav {
+	padding: 7px 10px;
+	float: right;
+	display: inline;
+}
+#login_link1{
+	padding: 7px 10px;
+	float: right;
+	display: inline;
+}
+#logo {
+	float: left;
+	margin-right: 40px;
+}
+#nav_links {
+	margin-left: 100px;
+}
+#nav_links ul {
+	/*width: 500px;*/
+	margin: 0px auto;
+	padding: 0px;
+}
+#nav_links li {
+	display: inline;
+	float: left;
+	/*width: 100px;*/
+	margin-right: 10px;
+	text-align: center;
+}
+.facebook_connect_button {
+  background: url("../images/social/facebook_connect.png") no-repeat 0 0;
+  height: 21px;
+  width: 169px;
+  text-indent: -9999px;
+  display: block;
+}
+.facebook_connect_button:hover {
+  background: url("../images/social/facebook_connect.png") no-repeat 0 -21px;
+}
+#page {
+	width: 960px;
+	margin: 0px auto;
+}
+#main {
+	float: left;
+	width: 650px;
+}
+#main .content_pane {
+  background-color: #F9F9F9;
+  border: 1px solid #CCC;
+}
+#sidebar {
+	float: right;
+	width: 300px;
+  background: #EBEBEB;
+}
+#sidebar .links a {
+	background: none;
+}
+#sidebar .links a:hover {
+	color: #E12000;
+}
+.social_buttons_container {
+  text-align: center;
+}
+.social_button {
+  margin-right: 6px;
+}
+
+#intro_video {
+  width: 220px;
+  height: 160px;
+}
+#intro_video:hover {
+  border: 1px solid #fc0;
+}
+#p_footer {
+	clear: both;
+	color: #FFFFFF;
+	padding-top: 10px;
+	font-size: x-small;
+}
+#header, #about, #getting-started {
+	padding-left: 75px;
+	padding-right: 30px;
+	
+}
+#header {
+	background-image: url("../images/rails.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 64px;
+}
+#header h1, #header h2 {
+	margin: 0
+}
+#header h2 {
+	color: #888;
+	font-weight: normal;
+	font-size: 16px;
+}
+#footer_bg {
+  background-color: #E6EFF2;
+  border-top: 1px solid #DCE8EC;
+  clear: both;
+  height: 50px;
+  width: 100%;
+}
+#footer {
+	color: #5A5858;
+	width: 960px;
+	margin: 0px auto;
+}
+#comment_text_area_wrapper {
+  margin: 0px;
+}
+#comment_text_area {
+  height: 48px;
+  float: left;
+  margin: 0px;
+}
+#comment_submit_button {
+  height: 48px;
+  width: 70px;
+  float: left;
+  margin: 0px auto;
+}
+.team_logo_thumbnail {
+  height: 100px;
+  width: 100px;
+}
+.pagination {
+  text-align: center;
+}
+#games_search_form input {
+  font-size: 18px;
+  padding: 3px;
+  margin: 0;
+}
+#games_search_form .search_field {
+  font-size: 13px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  width: 200px;
+  height: 22px;
+}
+.prediction_score_input {
+  width: 32px;
+  height: 32px;
+  padding: 3px;
+  font-size: 28px;
+  text-align: center;
+}
+.location_field {
+  font-size: 16px;
+  float: left;
+}
+.location_field input {
+  font-size: 16px;
+  padding: 5px;
+  width: 240px;
+  height: 30px;
+  margin-right: 8px;
+}
+.location_field select {
+  font-size: 16px;
+  padding: 5px;
+  width: 252px;
+  height: 41px;
+  margin-right: 8px;
+}
+.location_field input.long {
+  width: 500px;
+}
+.recent_activity {
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 10px;
+}
+.recent_activity .activity_user_thumbnail {
+  float: left;
+  margin-right: 5px;
+}
+.recent_activity .activity_desc {
+  float: left;
+}
+.user_avatar {
+  width: 70px;
+  height: 70px;
+}
+.mobile_app_download {
+  float: left;
+  width: 30%;
+}
+/* Comment */
+.comment {
+  width: 500px;
+}
+.comment_header {
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  height: 24px;
+  background-color: #E2E1DE;
+}
+.comment_header .comment_author_thumbnail {
+  float: left;
+}
+.comment_header .comment_meta {
+  float: left;
+}
+.comment_header .author {
+  font-weight: bold;
+  margin-right: 100px;
+}
+.comment_header img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.comment_body {
+  height: 50px;
+}
+/* Prediction */
+.prediction {
+  width: 500px;
+}
+.prediction_header {
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  height: 24px;
+  background-color: #E2E1DE;
+}
+.prediction_header .prediction_author_thumbnail {
+  float: left;
+}
+.prediction_header .prediction_meta {
+  float: left;
+}
+.prediction_header .author {
+  font-weight: bold;
+  margin-right: 100px;
+}
+.prediction_header img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.prediction_body {
+  height: 50px;
+}
