@@ -10,7 +10,7 @@
 					<%= link_to "Games" %>
 				</li>
         		<li>
-					<%= link_to "Teams" %>
+					<%= link_to "Teams",:controller=> "teams",:action=>"index"%>
 				</li>
 				<li>
 					<%= link_to "Leaderboard" %>
@@ -24,7 +24,13 @@
 				</li>
 				<%else%>
 				<li>
-					<%= link_to "Sign In", signin_path%>
+					<%= link_to "Sign Up", signup_path%>
+				</li>
+				<!-- <li>
+					Have an account
+				</li> -->
+				<li>
+					<%= link_to "Have an account Sign In", signin_path%>
 				</li>
 				<%end%>
 			</ul>

@@ -1,5 +1,8 @@
 <div id="sidebar">
   <div class="content_pane">
+  		<%if signed_in?%>
+  			<li><%=link_to "Register your Team here....", :controller=> "teams",:action=>"new"%></li>
+  		<%end%>
 		<h2 class="content_pane_title">Discover Gpl!</h2>
     <%= link_to(image_tag("video_player.png", :alt => "Discover CheerList!", :id => "intro_video"),
         "http://www.youtube.com/watch?v=fFj4fvAlf7g?fs=1&amp;autoplay=1",   

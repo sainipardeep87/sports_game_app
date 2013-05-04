@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<%unless @teams.nil?%>
+<table>
+	<th>Team Name</th>
+	<th>Team City</th>
+	<th>No of Players</th>
+	<%@teams.each do |team|%>
+	<tr>
+	<td><%=team.team_name%></td>
+	<td><%=team.team_city%></td>
+	<td><%=team.no_of_players%></td>
+		
+	</tr>
+	<%end%>
+</table>
+<%else%>
+	<h3>No teams registered yet</h3>
+<%end%>

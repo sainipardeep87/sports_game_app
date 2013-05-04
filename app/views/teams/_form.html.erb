@@ -1,0 +1,36 @@
+<div class="content_pane">
+<%= form_for(@team) do |f| %>
+  <% if @team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+      <% @team.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+  	<p><%= f.label :team_name %><br />
+      <%= f.text_field :team_name %></p>
+      
+      <p><%= f.label :city%><br />
+      	<%= f.text_field :team_city%></p>
+      	
+      	<p><%= f.label :Age_Group%><br />
+      	<%= f.text_field :age_group%></p>
+      	
+      	
+      	
+      	<p><%= f.label :no_of_players%><br />
+      	<%= f.text_field :no_of_players%></p>
+      	
+      	<p><%= f.label :entry_fee_paid%>
+      	<%= f.check_box :entry_fee_paid%></p>
+    	
+    	<%= f.submit "Register Team" %>
+  </div>
+<% end %>
+</div>
