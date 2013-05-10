@@ -3,12 +3,11 @@
 	<head>
 		<title>GPL - <%= @title || "Check-in Games and Support Your Favourite Team" %></title>
 		<meta property="fb:app_id" content="<%= Facebook.config[:client_id] %>">
-		<%= stylesheet_link_tag "fancybox/jquery.fancybox-1.3.4"%>
+		
 		<%= stylesheet_link_tag    "application", media: "all" %>
 		<%= javascript_include_tag "application" %>
 		<%= csrf_meta_tags %>
-		<%= javascript_include_tag "fancybox/jquery.fancybox-1.3.4.pack" %>
-		<%= javascript_include_tag "fancybox/jquery.mousewheel-3.0.4.pack"%>
+		
 
 	</head>
 
