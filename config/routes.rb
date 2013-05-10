@@ -1,4 +1,9 @@
 GamesApplication::Application.routes.draw do
+  resource :facebook, :except => :create do
+    get :callback, :to => :create
+  end
+
+
   resources :teams
 
 

@@ -9,7 +9,7 @@ gem 'therubyracer'
 gem 'execjs'
 gem 'mysql2'
 gem 'bcrypt-ruby', '3.0.1'
-
+gem 'fb_graph'
 
 
 # Gems used only for assets and not required

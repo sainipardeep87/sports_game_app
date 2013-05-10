@@ -17,10 +17,17 @@
 				</li>
 				<% if signed_in? %>
 				<li>
-				 	<%= link_to current_user.email, user_path(current_user)%>
+				 	<%= link_to current_user1.email, user_path(current_user1)%>
 				</li>
 				<li>
 					 <%= link_to "Sign out",signout_path, method: 'delete'%>
+				</li>
+				<%elsif authenticated?%>
+				<li>
+				 	<%= link_to current_user.profile.name, user_path(current_user)%>
+				</li>
+				<li>
+					 <%= link_to "SignOut", facebook_path, :method => :delete %>
 				</li>
 				<%else%>
 				<li>
@@ -30,11 +37,15 @@
 					Have an account
 				</li> -->
 				<li>
-					<%= link_to "Have an account Sign In", signin_path%>
+					<li><%= link_to "Login", "#login_form", :id =>"single_image", :class=>"fancybox" %></li>
 				</li>
 				<%end%>
 			</ul>
 		</div>
-		
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox();
+			});	
+		</script>
 	</div>
 </div>
